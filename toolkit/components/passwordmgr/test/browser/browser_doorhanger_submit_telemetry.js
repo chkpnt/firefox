@@ -365,7 +365,7 @@ async function test_submit_telemetry(tc) {
         }
 
         info("Waiting for doorhanger");
-        await clickDoorhangerButton(notif, REMEMBER_BUTTON);
+        clickDoorhangerButton(notif, REMEMBER_BUTTON);
       }
     );
   }

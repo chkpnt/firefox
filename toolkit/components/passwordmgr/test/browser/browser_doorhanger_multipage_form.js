@@ -177,7 +177,7 @@ async function test_save_change(testData) {
         "passwordmgr-storage-changed",
         (_, data) => data == expectedNotification
       );
-      await clickDoorhangerButton(notif, REMEMBER_BUTTON);
+      clickDoorhangerButton(notif, REMEMBER_BUTTON);
       await promiseLogin;
       await cleanupDoorhanger(notif); // clean slate for the next test
 

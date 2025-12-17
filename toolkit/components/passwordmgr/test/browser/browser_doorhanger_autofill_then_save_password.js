@@ -168,7 +168,7 @@ async function test_save_change({
         (_, data) => data == expectedNotification
       );
 
-      await clickDoorhangerButton(notif, REMEMBER_BUTTON);
+      clickDoorhangerButton(notif, REMEMBER_BUTTON);
       await promiseLogin;
       await cleanupDoorhanger(notif); // clean slate for the next test
 

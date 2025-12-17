@@ -27,7 +27,7 @@ add_task(
       "subtst_notifications_1.html",
       async () => {
         const notif = await getCaptureDoorhangerThatMayOpen("password-save");
-        await clickDoorhangerButton(notif, REMEMBER_BUTTON);
+        clickDoorhangerButton(notif, REMEMBER_BUTTON);
       }
     );
 

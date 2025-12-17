@@ -62,7 +62,7 @@ add_task(async function test_policy_masterpassword_doorhanger() {
         }
       };
 
-      await clickDoorhangerButton(notif, REMEMBER_BUTTON);
+      clickDoorhangerButton(notif, REMEMBER_BUTTON);
 
       await TestUtils.waitForCondition(
         () => dialogURL,
